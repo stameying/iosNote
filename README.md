@@ -10,9 +10,9 @@ Basically following the installation guide on <a href="http://www.aerisweather.c
 3. Pick components of Aeris iOS SDK, for this assignment we can only use Aeris, AerisUI and AerisMap
 
 4. Install <a href="https://github.com/AFNetworking/AFNetworking">AFNetworking 2.0</a> Using CocoaPods. AFNetworking is a required dependency for the Aeris iOS SDK and must be version 2.0 or higher.
-	4.1 Downloading AfNetworking
-	4.2 Install CocoaPods
-		4.2.1 Go to <a href="https://cocoapods.org/">CocoaPods</a> and follow the instruction to install it
+	4.1. Downloading AfNetworking <br>
+	4.2. Install CocoaPods <br>
+		4.2.1 Go to <a href="https://cocoapods.org/">CocoaPods</a> and follow the instruction to install it<br>
 	4.3 Go to your project directory from terminal, then run the following command
 		4.3.1 touch Podfile
 		4.3.2 open -a Xcode Podfile
