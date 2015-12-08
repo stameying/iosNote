@@ -35,16 +35,17 @@ Basically following the installation guide on <a href="http://www.aerisweather.c
 		3. open the bridge header we just create, add the required header files by copying and pasting the three lines from 7 under step 5 (<a href="http://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/">Aeris ios sdk</a>), which should look like #import <Aeris/Aeris.h> ...
 		4. in Building Setting, the one next to Building Phases, in Swift Compiler - Code Generation, add the bridging header file path. If it is under the root of your project, it should be similar to "test-Bridging-Header" (don't put "" into it)
 	8. Try build the project and there should be no error. Check below if you see some error. If there is no error
-		a. Go to the viewController where you want to use the map. 
-		b. 
+		1. Go to the viewController where you want to use the map. 
+		2. 
 		```
 		let aerisConsumerId = "Your id goes here"
         let aerisConsumerSecret = "your secret number goes here"
         AerisEngine.engineWithKey(aerisConsumerId, secret: aerisConsumerSecret)
         ```
-		c. build to see if there is error
+		3. build to see if there is error
 6. Adding AWFWeather Map <a href="http://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/getting-started/weather-maps/">Aeris WeatherMap</a>
-	1. 	```
+	1. 	
+	```
 		let location = CLLocationCoordinate2D(
             latitude: some double number,
             longitude: some double number
@@ -57,7 +58,6 @@ Basically following the installation guide on <a href="http://www.aerisweather.c
         self.view.addSubview(weatherMap.weatherMapView)                        
     	// you can later add layer by weather.addLayerType()
     	```
-		
 
 ## Build Error
 1. "Undefined symbols for architecture arm64":
