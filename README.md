@@ -45,18 +45,18 @@ Basically following the installation guide on <a href="http://www.aerisweather.c
 		3. build to see if there is error
 6. Adding AWFWeather Map <a href="http://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/getting-started/weather-maps/">Aeris WeatherMap</a>
 	1. 	
-	 ```
+		```
     	let weatherMap:AWFWeatherMap = AWFWeatherMap.init(mapType: AWFWeatherMapType.Apple)
         // you can set center by weatherMap.setMapCenterCoordinate
         weatherMap.weatherMapView.frame = self.view.bounds
         self.view.addSubview(weatherMap.weatherMapView)                        
     	// you can later add layer by weather.addLayerType()
-    ```
+    	```
 
 ## Build Error
 1. "Undefined symbols for architecture arm64":
-	a. Go back to 6 under step5
-	b. add $(inherited) to the Other Linker Flags.
+	1. Go back to 6 under step5
+	2. add $(inherited) to the Other Linker Flags.
 		
 		
 		
