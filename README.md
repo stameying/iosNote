@@ -17,8 +17,8 @@ Basically following the installation guide on <a href="http://www.aerisweather.c
 	3. Go to your project directory from terminal, then run the following command.<br>
 		a. touch Podfile<br>
 		b. open -a Xcode Podfile<br>
-		c. copy folloing code into the Podfile, ios '7.0' here works for me and you can try to replace it by 9.0 <br>
-		
+		c. copy following code into the Podfile, ios '7.0' here works for me and you can try to replace it by 9.0
+		1.
 			```
 			platform :ios, '7.0'
 			pod "AFNetworking", "~> 2.0"
@@ -50,7 +50,7 @@ Basically following the installation guide on <a href="http://www.aerisweather.c
 		3. build to see if there is error
 		
 6. Adding AWFWeather Map <a href="http://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/getting-started/weather-maps/">Aeris WeatherMap</a>
-		
+	1.		
 		```
     	let weatherMap:AWFWeatherMap = AWFWeatherMap.init(mapType: AWFWeatherMapType.Apple)
         // you can set center by weatherMap.setMapCenterCoordinate
