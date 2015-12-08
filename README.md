@@ -73,7 +73,7 @@ Basically following the installation guide on <a href="http://www.aerisweather.c
 		
 ## Note:
 
-	I'm new to Swift and IOS development. This stuff
+I'm new to Swift and IOS development. This stuff
 	takes me  1-2 days to figure it out, so I write this 	down to help people who might be new as well and try 	to use Embed Aeris Weather Map into their swift 	project.
 		
 		
