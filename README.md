@@ -30,28 +30,32 @@ Basically following the installation guide on <a href="http://www.aerisweather.c
 	5. Same to 5
 	6. Same to 6
 	7. Creating Bridge header for our swift project <a href="https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/MixandMatch.html">Swift and Objective-C in the Same Project</a>
-		a. click new file -> file -> Header in Xcode
-		b. name of the header file: FileyourProjectName-Bridging-Header.h (i.e. test-Bridging-Header.h)
-		c. open the bridge header we just create, add the required header files by copying and pasting the three lines from 7 under step 5 (<a href="http://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/">Aeris ios sdk</a>), which should look like #import <Aeris/Aeris.h> ...
-		d. in Building Setting, the one next to Building Phases, in Swift Compiler - Code Generation, add the bridging header file path. If it is under the root of your project, it should be similar to "test-Bridging-Header" (don't put "" into it)
+		1. click new file -> file -> Header in Xcode
+		2. name of the header file: FileyourProjectName-Bridging-Header.h (i.e. test-Bridging-Header.h)
+		3. open the bridge header we just create, add the required header files by copying and pasting the three lines from 7 under step 5 (<a href="http://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/">Aeris ios sdk</a>), which should look like #import <Aeris/Aeris.h> ...
+		4. in Building Setting, the one next to Building Phases, in Swift Compiler - Code Generation, add the bridging header file path. If it is under the root of your project, it should be similar to "test-Bridging-Header" (don't put "" into it)
 	8. Try build the project and there should be no error. Check below if you see some error. If there is no error
 		a. Go to the viewController where you want to use the map. 
 		b. 
-		```let aerisConsumerId = "Your id goes here"
+		```
+		let aerisConsumerId = "Your id goes here"
         let aerisConsumerSecret = "your secret number goes here"
-        AerisEngine.engineWithKey(aerisConsumerId, secret: aerisConsumerSecret)```
+        AerisEngine.engineWithKey(aerisConsumerId, secret: aerisConsumerSecret)
+        ```
 		c. build to see if there is error
 6. Adding AWFWeather Map <a href="http://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/getting-started/weather-maps/">Aeris WeatherMap</a>
-	1. ```let location = CLLocationCoordinate2D(
+	1. 	```
+		let location = CLLocationCoordinate2D(
             latitude: some double number,
             longitude: some double number
-        )```
+        )
+    ```
     2. ```
     	let weatherMap:AWFWeatherMap = AWFWeatherMap.init(mapType: AWFWeatherMapType.Apple)
-        weatherMap.setMapCenterCoordinate(location, zoomLevel: 2, animated: true)
+        // you can set center by weatherMap.setMapCenterCoordinate
         weatherMap.weatherMapView.frame = self.view.bounds
-        weatherMap.addLayerType(AWFLayerType.RadarSatellite)
-        self.view.addSubview(weatherMap.weatherMapView)
+        self.view.addSubview(weatherMap.weatherMapView)                        
+    	// you can later add layer by weather.addLayerType()
     	```
 		
 
