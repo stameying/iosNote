@@ -1,5 +1,6 @@
 # Using AerisWeatherMap in iOS9 with Swift
 Basically following the installation guide on <a href="http://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/">Aeris_IOS_SDK</a>
+	
 
 ## Details
 
@@ -16,7 +17,7 @@ Basically following the installation guide on <a href="http://www.aerisweather.c
 	3. Go to your project directory from terminal, then run the following command.<br>
 		a. touch Podfile<br>
 		b. open -a Xcode Podfile<br>
-		c. copy folloing code into the Podfile<br>
+		c. copy folloing code into the Podfile, ios '7.0' here works for me and you can try to replace it by 9.0 <br>
 			```platform :ios, '7.0'
 			pod "AFNetworking", "~> 2.0"```
 		d. pod install<br>
@@ -43,8 +44,8 @@ Basically following the installation guide on <a href="http://www.aerisweather.c
         AerisEngine.engineWithKey(aerisConsumerId, secret: aerisConsumerSecret)
         ```
 		3. build to see if there is error
+		
 6. Adding AWFWeather Map <a href="http://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/getting-started/weather-maps/">Aeris WeatherMap</a>
-	1. 	
 		
 		```
     	let weatherMap:AWFWeatherMap = AWFWeatherMap.init(mapType: AWFWeatherMapType.Apple)
@@ -55,14 +56,20 @@ Basically following the installation guide on <a href="http://www.aerisweather.c
     	```
 
 ## Build Error
-1. "Undefined symbols for architecture arm64":
+	"Undefined symbols for architecture arm64":
+	
 	1. Go back to 6 under step5
 	2. add $(inherited) to the Other Linker Flags.
 		
+			
+## Contact
+
+ 	E-mail:huxiaora@usc.edu
+
 		
-		
-		
-		
+## Note:
+
+	I'm new to Swift and IOS development. This stuff takes me  1-2 days to figure it out, so I write this down to help people who might be new as well and try to use Embed Aeris Weather Map into their swift project.
 		
 		
 		
