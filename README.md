@@ -45,6 +45,7 @@ Basically following the installation guide on <a href="http://www.aerisweather.c
 		3. build to see if there is error
 6. Adding AWFWeather Map <a href="http://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/getting-started/weather-maps/">Aeris WeatherMap</a>
 	1. 	
+		
 		```
     	let weatherMap:AWFWeatherMap = AWFWeatherMap.init(mapType: AWFWeatherMapType.Apple)
         // you can set center by weatherMap.setMapCenterCoordinate
