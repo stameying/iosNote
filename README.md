@@ -18,8 +18,12 @@ Basically following the installation guide on <a href="http://www.aerisweather.c
 		a. touch Podfile<br>
 		b. open -a Xcode Podfile<br>
 		c. copy folloing code into the Podfile, ios '7.0' here works for me and you can try to replace it by 9.0 <br>
-			```platform :ios, '7.0'
-			pod "AFNetworking", "~> 2.0"```
+		
+			```
+			platform :ios, '7.0'
+			pod "AFNetworking", "~> 2.0"
+			```
+			
 		d. pod install<br>
 	4. After installing AFnetworking, closing current XCode project if it is open, then go to your working directory and open the xxx.xcworkspace just created<br>
 
