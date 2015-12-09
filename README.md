@@ -6,26 +6,24 @@ Basically following the installation guide on <a href="http://www.aerisweather.c
 
 1. Download the SDK <a href="http://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/">Aeris_IOS_SDK</a>
 
-2. Obtain API access keys by <a href="http://www.aerisweather.com/support/docs/api/">registration</a>
+2. Obtain API access keys by <a href="http://www.aerisweather.com/support/docs/api/">registration</a> and registering an new App and then you can find the Key. (when registering, the namespace should be same to the one in your project)
 
 3. Pick components of Aeris iOS SDK, for this assignment we can only use Aeris, AerisUI and AerisMap
 
 4. Install <a href="https://github.com/AFNetworking/AFNetworking">AFNetworking 2.0</a> Using CocoaPods. AFNetworking is a required dependency for the Aeris iOS SDK and must be version 2.0 or higher
-	1. Downloading AfNetworking <br>
-	2. Install CocoaPods <br>
+	1. Install CocoaPods <br>
 		a. Go to <a href="https://cocoapods.org/">CocoaPods</a> and follow the instruction to install it<br>
-	3. Go to your project directory from terminal, then run the following command.<br>
-		a. touch Podfile<br>
-		b. open -a Xcode Podfile<br>
-		c. copy folloing code into the Podfile, ios '7.0' here works for me and you can try to replace it by 9.0 <br>
+	2. Go to your project directory from terminal, then run the following command.<br>
+		1. touch Podfile<br>
+		2. open -a Xcode Podfile<br>
+		3. copy folloing code into the Podfile, ios '7.0' here works for me and you can try to replace it by 9.0
 		
 		```
 			platform :ios, '7.0'
 			pod "AFNetworking", "~> 2.0"
 		```
-			
-		d. pod install<br>
-	4. After installing AFnetworking, closing current XCode project if it is open, then go to your working directory and open the xxx.xcworkspace just created<br>
+		4. pod install		
+	3. After installing AFnetworking, closing current XCode project if it is open, then go to your working directory and open the xxx.xcworkspace just created<br>
 
 5. Go back to the <a href="http://www.aerisweather.com/support/docs/toolkits/aeris-ios-sdk/">Aeris_IOS_SDK</a> tutorial and we are now in step5. 
 	1. Skipped. (Since we should have the xcworkspace opened alreadt. )
